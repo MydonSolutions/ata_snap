@@ -155,6 +155,7 @@ if __name__ == '__main__':
             help ='Destination IP address to which spectra should be sent. Default: get from config file')
 
     args = parser.parse_args()
+    
     run(args.host, args.fpgfile, args.configfile,
         sync=args.sync,
         mansync=args.mansync,
